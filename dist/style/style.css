@@ -1,0 +1,22 @@
+html {
+	font-style: sans-serif;
+}
+.mainLogo {
+	margin-right: 17.5%;
+	margin-left: 17.5%;
+}
+.headerBar {
+	border-top-width: .5px;
+	border-top-color: black;
+	border-bottom-width: 1px;
+	border-bottom-color: black;
+	height: 30px;
+	font-size: 12px;
+	display: table;
+}
+.headLink {
+	color: black;
+	text-decoration: none;
+	display: table-cell;
+	vertical-align: center;
+}

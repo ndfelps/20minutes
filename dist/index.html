@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<title></title>
+</head>
+<body>
+<!-- js sdk -->
+	<script type = "text/javascript">
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : 'your-app-id',
+          xfbml      : true,
+          version    : 'v2.4'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- js sdk end -->
+	<!-- start facebook button script -->
+	<div id="fb-root"></div>
+	<script type = "text/javascript">(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "http://connect.facebook.net/fb_LT/sdk.js#xfbml=1&version=v2.4";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- end facebook button script -->
+	<header>
+		<img class = "mainLogo" src = "http://i.imgur.com/xek9Uht.jpg">
+		<div class="fb-like" data-href="https://www.facebook.com/20MinutesAgoStudios?fref=ts" data-width="1000" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
+		</div>
+		<div class = "headerBar">
+			<a class = "headLink" href = "">News</a>
+			<a class = "headLink" href = "">Store</a>
+			<a class = "headLink" href = "">About Us</a>
+		</div>
+	</header>
+	<script type="text/javascript" src="dist/all.js"></script>
+</body>
+</html>
